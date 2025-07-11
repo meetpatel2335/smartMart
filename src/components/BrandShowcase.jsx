@@ -7,7 +7,7 @@ const brands = [
   { name: "Libas", img: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=256&q=80" },
   { name: "Ahalyaa", img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=256&q=80" },
   { name: "Anouk", img: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=256&q=80" },
-  { name: "Sangria", img: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=facearea&w=256&q=80" },
+  { name: "Sangria", img: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=facearea&w=256&q=80" },
   { name: "Vishudh", img: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=facearea&w=256&q=80" },
   { name: "W", img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=256&q=80" },
   { name: "Aurelia", img: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=facearea&w=256&q=80" },

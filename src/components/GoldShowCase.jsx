@@ -17,19 +17,27 @@ const GoldShowcase = () => {
       {/* Right Section */}
       <div className="w-full md:w-1/2 grid grid-cols-2 gap-2 xs:gap-3 sm:gap-6">
         <div className="flex flex-col items-center transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer">
-          <img src="/images/lehengas.png" alt="Lehengas" className="h-14 xs:h-20 sm:h-32 lg:h-40 border-4 border-yellow-500 w-full object-cover rounded-lg" />
+          <div className="w-full max-w-[120px] aspect-square bg-white p-2 sm:p-3 rounded-lg border-4 border-yellow-500 shadow-md flex items-center justify-center overflow-hidden mx-auto">
+            <img src="/images/lehngas.webp" alt="Lehengas" className="max-h-full max-w-full object-contain" />
+          </div>
           <span className="mt-1 sm:mt-2 font-medium text-xs xs:text-sm sm:text-base lg:text-lg text-yellow-200">Lehengas</span>
         </div>
         <div className="flex flex-col items-center transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer">
-          <img src="/images/menwear.png" alt="Menwear" className="h-14 xs:h-20 sm:h-32 lg:h-40 border-4 border-yellow-500 w-full object-cover rounded-lg" />
+          <div className="w-full max-w-[120px] aspect-square bg-white p-2 sm:p-3 rounded-lg border-4 border-yellow-500 shadow-md flex items-center justify-center overflow-hidden mx-auto">
+            <img src="/images/menswear.webp" alt="Menwear" className="max-h-full max-w-full object-contain" />
+          </div>
           <span className="mt-1 sm:mt-2 font-medium text-xs xs:text-sm sm:text-base lg:text-lg text-yellow-200">Menwear</span>
         </div>
         <div className="flex flex-col items-center transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer">
-          <img src="/images/sarees.png" alt="Sarees" className="h-14 xs:h-20 sm:h-32 lg:h-40 border-4 border-yellow-500 w-full object-cover rounded-lg" />
+          <div className="w-full max-w-[120px] aspect-square bg-white p-2 sm:p-3 rounded-lg border-4 border-yellow-500 shadow-md flex items-center justify-center overflow-hidden mx-auto">
+            <img src="/images/saree.webp" alt="Sarees" className="max-h-full max-w-full object-contain" />
+          </div>
           <span className="mt-1 sm:mt-2 font-medium text-xs xs:text-sm sm:text-base lg:text-lg text-yellow-200">Sarees</span>
         </div>
         <div className="flex flex-col items-center transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer">
-          <img src="/images/jewellery.png" alt="Jewellery" className="h-14 xs:h-20 sm:h-32 lg:h-40 border-4 border-yellow-500 w-full object-cover rounded-lg" />
+          <div className="w-full max-w-[120px] aspect-square bg-white p-2 sm:p-3 rounded-lg border-4 border-yellow-500 shadow-md flex items-center justify-center overflow-hidden mx-auto">
+            <img src="/images/jewellery.webp" alt="Jewellery" className="max-h-full max-w-full object-contain" />
+          </div>
           <span className="mt-1 sm:mt-2 font-medium text-xs xs:text-sm sm:text-base lg:text-lg text-yellow-200">Jewellery</span>
         </div>
       </div>

@@ -8,12 +8,14 @@ import GoldShowCase from './components/GoldShowCase';
 import ProductGrid from './components/ProductGrid';
 import Footer from './components/Footer';
 import InvestorRelations from './components/InvestorRelations';
+import ProductShowPage from './components/ProductShowPage';
 import { Routes, Route } from 'react-router-dom';
 
 export default function App() {
   return (
     <Routes>
       <Route path="/investor-relations" element={<InvestorRelations />} />
+      <Route path="/product/:id" element={<ProductShowPage />} />
       <Route path="*" element={
         <>
           <Navbar />
