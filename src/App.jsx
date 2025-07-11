@@ -6,18 +6,27 @@ import CategoryShowcase from './components/CategoryShowcase';
 import BrandShowcase from './components/BrandShowcase';
 import GoldShowCase from './components/GoldShowCase';
 import ProductGrid from './components/ProductGrid';
+import Footer from './components/Footer';
+import InvestorRelations from './components/InvestorRelations';
+import { Routes, Route } from 'react-router-dom';
 
 export default function App() {
   return (
-    <> 
-      <Navbar />
-      <SubNavbar />
-      <HomeSection />
-      <TrendzShowcase />
-      <CategoryShowcase />
-      <BrandShowcase />
-      <GoldShowCase />
-      <ProductGrid />
-    </>
+    <Routes>
+      <Route path="/investor-relations" element={<InvestorRelations />} />
+      <Route path="*" element={
+        <>
+          <Navbar />
+          <SubNavbar />
+          <HomeSection />
+          <TrendzShowcase />
+          <CategoryShowcase />
+          <BrandShowcase />
+          <GoldShowCase />
+          <ProductGrid />
+          <Footer />
+        </>
+      } />
+    </Routes>
   );
 }

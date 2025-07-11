@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -44,7 +45,7 @@ export default function Navbar() {
           <div className="hidden sm:flex items-center space-x-0 ml-6">
             <a href="#" className="flex items-center px-5 h-20 text-gray-700 hover:text-[#6f2871] font-medium text-base transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:text-[#a100a1] active:scale-95" style={{fontFamily: 'Inter, sans-serif'}}>Become a Supplier</a>
             <div className="h-8 w-px bg-gray-300 mx-1" />
-            <a href="#" className="flex items-center px-5 h-20 text-gray-700 hover:text-[#6f2871] font-medium text-base transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:text-[#a100a1] active:scale-95" style={{fontFamily: 'Inter, sans-serif'}}>Investor Relations</a>
+            <Link to="/investor-relations" className="flex items-center px-5 h-20 text-gray-700 hover:text-[#6f2871] font-medium text-base transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:text-[#a100a1] active:scale-95" style={{fontFamily: 'Inter, sans-serif'}}>Investor Relations</Link>
             <div className="h-8 w-px bg-gray-300 mx-1" />
             <a href="#" className="flex flex-col items-center px-5 h-20 text-gray-700 hover:text-[#6f2871] font-medium text-base justify-center transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:text-[#a100a1] active:scale-95">
               <svg className="w-6 h-6 mb-1" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25v-1.5A2.25 2.25 0 016.75 16.5h10.5a2.25 2.25 0 012.25 2.25v1.5" /></svg>
@@ -80,7 +81,7 @@ export default function Navbar() {
               </div>
             </div>
             <a href="#" className="py-3 px-2 text-gray-700 hover:text-[#6f2871] font-medium text-base border-b border-gray-100 transition duration-300 ease-in-out hover:bg-gray-50 hover:scale-105 focus:outline-none focus:text-[#a100a1] active:scale-95" style={{fontFamily: 'Inter, sans-serif'}}>Become a Supplier</a>
-            <a href="#" className="py-3 px-2 text-gray-700 hover:text-[#6f2871] font-medium text-base border-b border-gray-100 transition duration-300 ease-in-out hover:bg-gray-50 hover:scale-105 focus:outline-none focus:text-[#a100a1] active:scale-95" style={{fontFamily: 'Inter, sans-serif'}}>Investor Relations</a>
+            <Link to="/investor-relations" className="py-3 px-2 text-gray-700 hover:text-[#6f2871] font-medium text-base border-b border-gray-100 transition duration-300 ease-in-out hover:bg-gray-50 hover:scale-105 focus:outline-none focus:text-[#a100a1] active:scale-95" style={{fontFamily: 'Inter, sans-serif'}}>Investor Relations</Link>
             <a href="#" className="py-3 px-2 flex items-center text-gray-700 hover:text-[#6f2871] font-medium text-base border-b border-gray-100 transition duration-300 ease-in-out hover:bg-gray-50 hover:scale-105 focus:outline-none focus:text-[#a100a1] active:scale-95">
               <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25v-1.5A2.25 2.25 0 016.75 16.5h10.5a2.25 2.25 0 012.25 2.25v1.5" /></svg>
               Profile
