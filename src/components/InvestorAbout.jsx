@@ -1,136 +1,68 @@
 import React from "react";
 
-const InvestorAbout = () => {
+const highlights = [
+  { title: "Founded", value: "2015", icon: "🎉" },
+  { title: "Employees", value: "2000+", icon: "👩‍💼" },
+  { title: "Cities Served", value: "500+", icon: "🌏" },
+  { title: "Awards", value: "15+", icon: "🏆" },
+];
+
+const testimonials = [
+  {
+    name: "Rina Patel",
+    text: "SmartMart helped me start my own business from home. The support and platform are amazing!",
+    img: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+  {
+    name: "Ajay Kumar",
+    text: "The reach and logistics of SmartMart are unmatched. My sales have doubled!",
+    img: "https://randomuser.me/api/portraits/men/43.jpg",
+  },
+];
+
+export default function InvestorAbout() {
   return (
-    <div className="px-6 md:px-20 py-12 space-y-16 bg-white text-gray-800">
-      {/* Section 1 */}
-      <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
+    <section className="w-full bg-white py-8 xs:py-10 sm:py-14 px-2 xs:px-4 sm:px-8 md:px-20">
+      {/* About/Mission Section */}
+      <div className="flex flex-col md:flex-row items-center gap-8 mb-10">
         <img
           src="https://images.meesho.com/images/marketing/1661417516766.webp"
-          alt="SmartMart Shopping"
-          className="rounded-lg w-full md:w-1/3"
+          alt="SmartMart About"
+          className="rounded-lg w-full md:w-1/2 mb-4 md:mb-0 shadow-lg"
         />
-        <div>
-          <h2 className="text-xl font-bold mb-2">
-            Making e-commerce affordable and accessible
-          </h2>
-          <p className="text-sm text-gray-700">
-            SmartMart is a multi-sided technology platform shaping e-commerce in
-            India by connecting customers, manufacturers, suppliers, and resellers.
-            We aim to make commerce inclusive, affordable, accessible and equitable,
-            enabling all customer segments across the country.
+        <div className="flex-1">
+          <h2 className="text-2xl xs:text-3xl font-bold mb-3 text-[#6f2871]">Who We Are</h2>
+          <p className="text-sm xs:text-base text-gray-700 mb-3">
+            SmartMart is India’s leading e-commerce platform, empowering millions of entrepreneurs and customers nationwide. Our mission is to make commerce accessible, affordable, and inclusive for all.
+          </p>
+          <h3 className="text-lg xs:text-xl font-semibold mb-2 text-[#a100a1]">Our Mission</h3>
+          <p className="text-xs xs:text-sm text-gray-600">
+            We believe in democratizing internet commerce, supporting small businesses, and building a sustainable, tech-driven future for India.
           </p>
         </div>
       </div>
 
-      {/* Section 2 - Videos */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="relative">
-          <img
-            src="https://images.meesho.com/images/marketing/1661417516766.webp"
-            alt="Sanju"
-            className="rounded-lg w-full"
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <button className="w-14 h-14 bg-white bg-opacity-75 rounded-full">
-              ▶
-            </button>
+      {/* Highlights/Timeline Section */}
+      <div className="grid grid-cols-2 xs:grid-cols-4 gap-4 xs:gap-6 mb-10">
+        {highlights.map((item) => (
+          <div key={item.title} className="flex flex-col items-center bg-gray-50 rounded-lg shadow p-4 xs:p-6">
+            <span className="text-2xl xs:text-3xl mb-2">{item.icon}</span>
+            <span className="text-xl xs:text-2xl font-bold text-[#6f2871]">{item.value}</span>
+            <span className="text-xs xs:text-sm text-gray-700 mt-1">{item.title}</span>
           </div>
-          <p className="mt-2 text-sm font-medium">
-            Watch how Sanju Sharma shops smarter, right from home
-          </p>
-        </div>
+        ))}
+      </div>
 
-        <div className="relative">
-          <img
-            src="https://images.meesho.com/images/marketing/1661417516766.webp"
-            alt="Yashwanth"
-            className="rounded-lg w-full"
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <button className="w-14 h-14 bg-white bg-opacity-75 rounded-full">
-              ▶
-            </button>
+      {/* Testimonials/Video Section */}
+      <div className="w-full bg-gradient-to-r from-[#a100a1] to-[#e94057] rounded-xl shadow-lg p-6 xs:p-8 flex flex-col md:flex-row items-center gap-6">
+        {testimonials.map((t) => (
+          <div key={t.name} className="flex flex-col items-center text-center flex-1">
+            <img src={t.img} alt={t.name} className="w-16 h-16 xs:w-20 xs:h-20 rounded-full object-cover mb-2 border-2 border-yellow-400" />
+            <p className="text-white text-sm xs:text-base mb-2">“{t.text}”</p>
+            <span className="text-yellow-200 text-xs xs:text-sm font-semibold">{t.name}</span>
           </div>
-          <p className="mt-2 text-sm font-medium">
-            Watch how Yashwanth chases style on a student budget
-          </p>
-        </div>
+        ))}
       </div>
-
-      {/* Section 3 */}
-      <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
-        <img
-          src="https://images.meesho.com/images/marketing/1661417516766.webp"
-          alt="Digitizing India"
-          className="rounded-lg w-full md:w-1/3"
-        />
-        <div>
-          <h2 className="text-xl font-bold mb-2">Digitizing Indian businesses</h2>
-          <p className="text-sm text-gray-700">
-            Our India-first approach equips SmartMart’s sellers with the tools to succeed:
-            online store creation, logistics, flexible return policies, low-cost
-            operations, a customer management system, performance-based advertising, and
-            seller care. Our low-cost policies help grow small businesses.
-          </p>
-        </div>
-      </div>
-
-      {/* Section 4 - More Videos */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="relative">
-          <img
-            src="https://images.meesho.com/images/marketing/1661417516766.webp"
-            alt="Vatsal"
-            className="rounded-lg w-full"
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <button className="w-14 h-14 bg-white bg-opacity-75 rounded-full">
-              ▶
-            </button>
-          </div>
-          <p className="mt-2 text-sm font-medium">
-            Watch how Vatsal transformed everyday products with Indian healthcare
-          </p>
-        </div>
-
-        <div className="relative">
-          <img
-            src="https://images.meesho.com/images/marketing/1661417516766.webp"
-            alt="Kavin"
-            className="rounded-lg w-full"
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <button className="w-14 h-14 bg-white bg-opacity-75 rounded-full">
-              ▶
-            </button>
-          </div>
-          <p className="mt-2 text-sm font-medium">
-            Watch how Kavin scaled BodyGlove through e-commerce
-          </p>
-        </div>
-      </div>
-
-      {/* Section 5 */}
-      <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
-        <img
-          src="https://images.meesho.com/images/marketing/1661417516766.webp"
-          alt="Delivery Network"
-          className="rounded-lg w-full md:w-1/3"
-        />
-        <div>
-          <h2 className="text-xl font-bold mb-2">
-            Building a low cost delivery network
-          </h2>
-          <p className="text-sm text-gray-700">
-            SmartMart operates through a nationwide delivery infrastructure and
-            selection of logistics partners to support hyper-local fulfillment at scale,
-            with a continued emphasis on reliability and cost-effectiveness.
-          </p>
-        </div>
-      </div>
-    </div>
+    </section>
   );
-};
-
-export default InvestorAbout;
+}

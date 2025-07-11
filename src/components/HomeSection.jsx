@@ -10,7 +10,7 @@ export default function HomeSection() {
           {/* Replace with actual image if available */}
           <img
             src="https://images.meesho.com/images/marketing/1661417516766.webp"
-            alt="Smart Shopping"
+            alt="SmartMart Shopping"
             className="w-36 xs:w-48 sm:w-72 md:w-[400px] lg:w-[440px] xl:w-[500px] 2xl:w-[600px] rounded-xl shadow-lg object-cover transition-transform duration-300 ease-in-out hover:scale-105"
             style={{background: '#fff'}}
           />
@@ -18,7 +18,7 @@ export default function HomeSection() {
         {/* Right: Text and Button */}
         <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
           <h1 className="text-white text-xl xs:text-2xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold leading-tight mb-3 sm:mb-4 xl:mb-6" style={{fontFamily: 'Inter, sans-serif'}}>
-            Smart Shopping<br />Trusted by Millions
+            SmartMart Shopping<br />Trusted by Millions
           </h1>
           <button className="mt-3 sm:mt-4 xl:mt-6 px-4 sm:px-8 xl:px-12 py-2.5 sm:py-3 xl:py-4 bg-white text-[#a100a1] text-base sm:text-lg xl:text-xl font-semibold rounded-lg shadow hover:bg-gray-100 transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-300 active:scale-95">
             Shop Now

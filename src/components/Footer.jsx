@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Column 1 */}
         <div>
-          <h2 className="text-2xl font-semibold mb-2">Shop Non-Stop on Meesho</h2>
+          <h2 className="text-2xl font-semibold mb-2">Shop Non-Stop on SmartMart</h2>
           <p className="text-gray-600 mb-1">Trusted by crores of Indians</p>
           <p className="text-gray-600 mb-4">Cash on Delivery | Free Delivery</p>
           <div className="flex space-x-4">
@@ -37,7 +37,7 @@ const Footer = () => {
         {/* Column 3 */}
         <div>
           <h3 className="font-semibold mb-2">Legal and Policies</h3>
-          <p className="mb-2 cursor-pointer hover:underline">Meesho Tech Blog</p>
+          <p className="mb-2 cursor-pointer hover:underline">SmartMart Tech Blog</p>
           <p className="mb-2 cursor-pointer hover:underline">Notices and Returns</p>
           <h3 className="font-semibold mt-4 mb-2">Reach out to us</h3>
           <div className="flex space-x-3">
@@ -63,14 +63,14 @@ const Footer = () => {
         <div>
           <h3 className="font-semibold mb-2">Contact Us</h3>
           <p className="text-gray-600">
-            Meesho Technologies Private Limited <br />
+            SmartMart Technologies Private Limited <br />
             CIN: U62099KA2024PTC186568 <br />
             3rd Floor, Wing-E, Helios Business Park,<br />
             Kadubeesanahalli Village, Varthur Hobli, Outer Ring Road Bellandur,<br />
             Bangalore, Bangalore South, Karnataka, India, 560103
           </p>
-          <p className="mt-2">E-mail address: <a href="mailto:query@meesho.com" className="text-blue-600">query@meesho.com</a></p>
-          <p className="text-gray-500 mt-1">© 2015-2025 Meesho.com</p>
+          <p className="mt-2">E-mail address: <a href="mailto:query@smartmart.com" className="text-blue-600">query@smartmart.com</a></p>
+          <p className="text-gray-500 mt-1">© 2015-2025 SmartMart.com</p>
         </div>
       </div>
     </footer>

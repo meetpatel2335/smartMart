@@ -24,7 +24,7 @@ const TrendzShowcase = () => {
     <div className="bg-gradient-to-r from-purple-800 to-purple-900 p-3 xs:p-4 sm:p-8 lg:p-12 xl:p-16 text-white flex flex-col md:flex-row items-center justify-between gap-4 xs:gap-6 md:gap-0">
       {/* Left Section */}
       <div className="text-center md:text-left mb-4 md:mb-0 w-full md:w-auto">
-        <h2 className="text-xl xs:text-2xl sm:text-4xl lg:text-5xl font-extrabold">meesho <span className="text-yellow-400">#TRENDZ</span></h2>
+        <h2 className="text-xl xs:text-2xl sm:text-4xl lg:text-5xl font-extrabold">SmartMart <span className="text-yellow-400">#TRENDZ</span></h2>
         <button className="mt-3 sm:mt-4 bg-white text-purple-800 font-semibold px-4 sm:px-6 py-2 text-sm sm:text-base shadow-md hover:bg-purple-100 transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-300 active:scale-95 rounded-lg">
           Shop Now
         </button>
